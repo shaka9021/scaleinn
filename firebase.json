@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "scaleinn",
+      "public": "dist/scaleinn",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

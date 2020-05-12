@@ -28,9 +28,18 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/startbootstrap-sb-admin-2/css/sb-admin-2.css",
+              "./node_modules/startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/startbootstrap-sb-admin-2/vendor/jquery/jquery.min.js",
+              "./node_modules/startbootstrap-sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              "./node_modules/startbootstrap-sb-admin-2/vendor/jquery-easing/jquery.easing.min.js",
+              "./node_modules/startbootstrap-sb-admin-2/js/sb-admin-2.min.js",
+              "./node_modules/startbootstrap-sb-admin-2/vendor/chart.js/Chart.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,6 +101,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -121,8 +131,16 @@
               "devServerTarget": "scaleinn:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "scaleinn"
+    }
+  },
+  "defaultProject": "scaleinn",
+  "cli": {
+    "analytics": "a9633007-3684-40dc-a54e-ea793eea5b09"
+  }
 }
